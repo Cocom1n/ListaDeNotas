@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    color: rgb(60, 51, 66);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(239, 232, 229);
+}
+
+.contenedor{
+    background-color: rgb(200, 180, 219);
+    margin: 50px;
+    padding: 20px;
+    text-align: center;
+    min-height: 100px;
+    border-radius: 10px;
+}
+
+.lista{
+    border: 1px solid #000000;
+    background-color: rgb(249, 240, 237);
+    padding: 20px 50px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
