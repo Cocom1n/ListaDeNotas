@@ -21,6 +21,16 @@ function ListaDeNotas() {
 
     const borrar = (idAEliminar) => {
         const nuevaLista = lista.filter(nota => nota.id !== idAEliminar);
+
+    // const borrar = (notaAEliminar) => {
+    //     let repeatIndex = -1;
+    //     lista.forEach((nota, index) => {
+    //         if (nota.mensaje == notaAEliminar.mensaje)
+    //         {
+    //             repeatIndex = index;
+    //         }
+    //     });
+    //     const nuevaLista = lista.filter((nota, index) => index != repeatIndex);
         setLista(nuevaLista);
     }
 
@@ -33,6 +43,7 @@ function ListaDeNotas() {
         <>
         <div className="contenedor">
             <h1>LISTA NOTAS</h1>
+
             <section className="cuadro">
                 <input value={nota} onChange={(e) => setNota(e.target.value)}></input>
                 <section className="botones">
@@ -40,6 +51,7 @@ function ListaDeNotas() {
                     <button onClick={añadir}>Agregar nota</button>
                 </section>
             </section>
+
             <ul class="lista">
                 {lista.map((nota, index) => (
                     <li key={nota.id}>
