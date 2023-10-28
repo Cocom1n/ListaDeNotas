@@ -18,7 +18,8 @@ body{
 }
 
 .lista{
-    border: 1px solid #000000;
+    border: 1px solid rgb(60, 51, 66);
+    border-radius: 10px;
     background-color: rgb(249, 240, 237);
     padding: 20px 50px;
     max-width: 300px;
@@ -30,4 +31,16 @@ li{
     display: flex;
     justify-content: space-around;
     margin: 10px;
+}
+.cuadro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+ }
+.botones{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
 }
